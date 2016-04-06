@@ -1,0 +1,36 @@
+<generatorConfiguration>
+	<jdbcConnection>
+		<classPath>E:\Maven\repository\mysql\mysql-connector-java\5.1.36\mysql-connector-java-5.1.36.jar</classPath>
+		<driverClass>com.mysql.jdbc.Driver</driverClass>
+		<connectionURL>jdbc:mysql://192.168.3.6:3306/yihui</connectionURL>
+		<userId>baichou</userId>
+		<password>xmts@sla_kxb_337</password>
+	</jdbcConnection>
+	
+	<javaModelGenerator targetPackage="com.yihui.model.entity" targetProject="F:/Test" />
+	<daoGenerator targetPackage="com.yihui.model.dao" targetProject="F:/Test" />
+	<daoImplGenerator targetPackage="com.yihui.model.dao.impl" targetProject="F:/Test" />
+	<serviceGenerator targetPackage="com.yihui.model.service" targetProject="F:/Test" />
+	<serviceImplGenerator targetPackage="com.yihui.model.service.impl" targetProject="F:/Test" />
+	
+	<sqlMapGenerator targetPackage="mapper" targetProject="F:/Test/resources" />
+	<springGenerator targetFile="spring-mybatis.xml" targetProject="F:/Test/resources" />
+ 
+	<excludeTable>
+		<table tableName="orgtemptree" />
+	</excludeTable>
+	<!--
+	<typeMapping default="com.yyq.core.mapping.SimpleTypeMap">
+		<type jdbcName="???" javaName="???" />
+	</typeMapping>
+	 -->
+	<tableNameConvert>
+		<format regex="t[0-9]{2}_([a-z_]+)" replacement="_$1"/>
+		<format regex="tjr_[0-9]{2}_([a-z_]+)" replacement="_$1"/>
+	</tableNameConvert>
+	
+	<colunmNameConvert>
+		<format regex="" replacement=""/>
+	</colunmNameConvert>
+	
+</generatorConfiguration>
