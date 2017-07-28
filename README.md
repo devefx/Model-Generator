@@ -1,5 +1,4 @@
-<font color="red"><strong>use</strong></font>
-<table>
+<font color="red"><strong>use</strong></font><table>
   <thead>
     <tr>
       <th>参数</th>
