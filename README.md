@@ -13,9 +13,9 @@ $("#myform").validate([options])
 **options**
 
 > **use**
->> 类型：String
->>> 说明
+>> 类型：String<br>
+>>> 指定要使用的验证模块名称（如果当前只有一个模块时可以忽略）
 
-> **debug**
+> **debug**(default: false)
 >> 类型：boolean
->>> Enables debug mode. If true, the form is not submitted and certain errors are displayed on the console (will check if a window.console property exists). Try to enable when a form is just submitted instead of validation stopping the submit.
+>>> 如果这个参数为true，那么表单不会提交，只进行检查，调试时十分方便
