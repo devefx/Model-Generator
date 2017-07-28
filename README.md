@@ -1,48 +1,23 @@
-<font color="red"><strong>use</strong></font><table>
-  <thead>
-    <tr>
-      <th>参数</th>
-      <th>类型</th>
-      <th>描述</th>
-      <th>默认值</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>validClass</td>
-      <td>String</td>
-      <td></td>
-      <td>"valid"</td>
-    </tr>
-    <tr>
-      <td>errorClass</td>
-      <td>String</td>
-      <td></td>
-      <td>"error"</td>
-    </tr>
-    <tr>
-      <td>errorElement</td>
-      <td>String</td>
-      <td></td>
-      <td>"label"</td>
-    </tr>
-    <tr>
-      <td>errorContainer</td>
-      <td>Selector</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>errorLabelContainer</td>
-      <td>Selector</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>wrapper</td>
-      <td>String</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+# Validator Js Documents
+
+### .validate() 方法
+
+验证选择的表单
+
+**语法**
+
+```js
+$("#myform").validate([options])
+```
+
+**options**
+
+> **use**
+>> 类型：String<br>
+>> 描述
+>>> 示例
+
+> **debug**
+>> 类型：boolean<br>
+>> 描述
+>>> 示例
